@@ -38,7 +38,7 @@ resource "aws_s3_bucket_policy" "allow_ssl_tls_requests_only" {
         "Action": "s3:*",
         "Effect": "Deny",
         "Resource": [
-            "arn:aws:s3:::test_VA_bucket/*"
+            "arn:aws:s3:::test-bucketguhdhvnmvnvgdhdhgjcksbhdlvahjb/*"
         ],
         "Condition": {
             "Bool": {
