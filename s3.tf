@@ -26,6 +26,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "mybucket" {
   }
 }
 
+
 resource "aws_s3_bucket_policy" "allow_ssl_tls_requests_only" {
   bucket = aws_s3_bucket.mybucket.id
   policy = <<POLICY
