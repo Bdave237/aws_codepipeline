@@ -10,7 +10,7 @@ provider "aws" {
   # 4) Assume role
   #assume_role {
    # role_arn = "arn:aws:iam::453307492034:role/terraform-deployer"
-  }
+ # }
 }
 
 terraform {
