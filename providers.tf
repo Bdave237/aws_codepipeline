@@ -5,11 +5,11 @@ provider "aws" {
 
 
   # 3) Shared Credentials
-  profile = "kifeh"
+  #profile = "kifeh"
 
   # 4) Assume role
-  assume_role {
-    role_arn = "arn:aws:iam::453307492034:role/terraform-deployer"
+  #assume_role {
+   # role_arn = "arn:aws:iam::453307492034:role/terraform-deployer"
   }
 }
 
