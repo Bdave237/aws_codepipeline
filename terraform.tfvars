@@ -1,5 +1,5 @@
 deletion_window_in_days = 10
-bucket = "test_VA_bucketguhdhvnmvnvgdhdhgjcksbhdlvahjb"
+bucket = "test-bucketguhdhvnmvnvgdhdhgjcksbhdlvahjb"
 acl = "private"
 
 # ami = "data.aws_ami.RHEL.id"
