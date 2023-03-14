@@ -27,28 +27,28 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "mybucket" {
 }
 
 
-resource "aws_s3_bucket_policy" "allow_ssl_tls_requests_only" {
-  bucket = aws_s3_bucket.mybucket.id
-  policy = <<POLICY
-  {
-    "Id": "ExamplePolicy",
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-        "Sid": "AllowSSLRequestsOnly",
-        "Action": "s3:*",
-        "Effect": "Deny",
-        "Resource": [
-            "arn:aws:s3:::test-bucketguhdhvnmvnvgdhdhgjcksbhdlvahjb/*"
-        ],
-        "Condition": {
-            "Bool": {
-            "aws:SecureTransport": "false"
-            }
-        },
-        "Principal": "*"
-        }
-    ]
-    }
-    POLICY
-}
+# resource "aws_s3_bucket_policy" "allow_ssl_tls_requests_only" {
+#   bucket = aws_s3_bucket.mybucket.id
+#   policy = <<POLICY
+#   {
+#     "Id": "ExamplePolicy",
+#     "Version": "2012-10-17",
+#     "Statement": [
+#         {
+#         "Sid": "AllowSSLRequestsOnly",
+#         "Action": "s3:*",
+#         "Effect": "Deny",
+#         "Resource": [
+#             "arn:aws:s3:::test-bucketguhdhvnmvnvgdhdhgjcksbhdlvahjb/*"
+#         ],
+#         "Condition": {
+#             "Bool": {
+#             "aws:SecureTransport": "false"
+#             }
+#         },
+#         "Principal": "*"
+#         }
+#     ]
+#     }
+#     POLICY
+# }
