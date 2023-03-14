@@ -9,3 +9,11 @@ variable "bucket" {
 variable "acl" {
     type = string
 }
+
+variable "secret_key" {
+    
+}
+
+variable "access_key" {
+    
+}
