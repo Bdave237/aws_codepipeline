@@ -6,9 +6,7 @@ variable "deletion_window_in_days" {
 variable "bucket" {
     type = string
 }
-variable "acl" {
-    type = string
-}
+
 
 variable "secret_key" {
     
