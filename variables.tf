@@ -17,3 +17,8 @@ variable "secret_key" {
 variable "access_key" {
     type = string
 }
+
+variable "region" {
+    type = string
+    default = "us-east-1"
+}
