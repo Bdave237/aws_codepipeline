@@ -15,13 +15,13 @@ provider "aws" {
  # }
 }
 
-terraform {
+#terraform {
   # bakend block
-  backend "s3" {
-    bucket = "terraform-test-tfstate237"
-    key    = "batch1/session-6/private_subnet.tfstate"
-    region = "us-east-1"
+ # backend "s3" {
+  #  bucket = "terraform-test-tfstate237"
+   # key    = "batch1/session-6/private_subnet.tfstate"
+    #region = "us-east-1"
 
-  }
+ # }
 
-}
+#}
