@@ -10,10 +10,6 @@ resource "aws_s3_bucket" "mybucket" {
   
 }
 
-resource "aws_s3_bucket_acl" "mybucket" {
-    bucket = aws_s3_bucket.mybucket.id
-    acl = var.acl
-}
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "mybucket" {
   bucket = aws_s3_bucket.mybucket.bucket
